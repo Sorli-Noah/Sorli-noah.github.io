@@ -1,77 +1,41 @@
-# Portfolio Noah Sorli — Mode d'emploi
+# Portfolio – Noah Sorli
 
-## Structure des fichiers
+Site statique : `index.html` et `style.css`. Pas de dépendance, pas de build.
+
+## Structure
 
 ```
-portfolio-noah/
-├── index.html       ← page principale
-├── style.css        ← tout le design
-├── script.js        ← interactions
-├── CV_Noah_Sorli.pdf  ← ton CV (à copier ici)
-└── img/
-    ├── supernova.jpg         ← photo BTS ou screenshot Supernova
-    ├── derniere-lettre.jpg   ← photo BTS ou screenshot La Dernière Lettre
-    └── justdance.jpg         ← photo BTS ou screenshot Just Dance IRL
+index.html
+style.css
+img/          images des projets
 ```
 
-## Ajouter une image de projet
+## Images
 
-1. Copie ton image dans le dossier `img/`
-2. Renomme-la (ex: `supernova.jpg`)
-3. Dans `index.html`, remplace le `src` de l'image correspondante :
-   ```html
-   <img src="img/supernova.jpg" alt="Supernova — clip musical" />
-   ```
-
-Si tu n'as pas encore d'image, le site affiche automatiquement un placeholder.
-
-## Mettre à jour les liens vidéo
-
-Dans `index.html`, trouve chaque carte projet et remplace :
-```html
-data-link="https://vimeo.com/TON_LIEN_SUPERNOVA"
-```
-par ton vrai lien Vimeo (ou YouTube) :
-```html
-data-link="https://vimeo.com/123456789"
-```
-
-## Ajouter un nouveau projet
-
-Dans `index.html`, dans la section `<div class="projects-list">`,
-copie-colle ce bloc et adapte-le :
+Déposer les images dans `img/`, puis indiquer le chemin dans l’attribut `style` du lien du projet :
 
 ```html
-<article class="project-card reveal" data-align="left" data-link="https://vimeo.com/TON_LIEN">
-  <div class="project-visual">
-    <img src="img/nom-projet.jpg" alt="Nom du projet" />
-    <div class="project-overlay">
-      <div class="overlay-inner">
-        <p class="overlay-role">Ton rôle · Autre rôle</p>
-        <h3 class="overlay-title">Nom du projet</h3>
-        <p class="overlay-meta">Type · Date</p>
-        <p class="overlay-desc">
-          Description détaillée de ton rôle et du projet.
-        </p>
-        <div class="overlay-tags">
-          <span>Tag 1</span><span>Tag 2</span>
-        </div>
-        <span class="overlay-cta">Voir la vidéo ↗</span>
-      </div>
-    </div>
-  </div>
-</article>
+<a href="…" style="--img: url('img/mon-image.jpg')">
 ```
 
-- `data-align="left"` → overlay à gauche
-- `data-align="right"` → overlay à droite
-- Alterne gauche/droite pour le rythme visuel
+Sans image, un fond dégradé s’affiche. Format conseillé : JPG, 1920 × 1080, moins de 400 Ko.
 
-## Héberger le site
+## Liens vidéo
 
-Options gratuites recommandées :
-- **GitHub Pages** : gratuit, fiable, lien en `ton-pseudo.github.io`
-- **Netlify** : drag & drop du dossier, en ligne en 30 secondes
-- **Vercel** : idem Netlify
+Chaque projet est un lien : remplacer la valeur de `href` par l’adresse de la vidéo. Un lien YouTube « non répertorié » convient pour une vidéo qui ne doit pas être publique.
 
-Pour Netlify : va sur netlify.com → "Deploy manually" → glisse le dossier `portfolio-noah`.
+## Ajouter un projet
+
+Copier un bloc `<article class="project">` dans `<div class="project-list">`, puis modifier le titre, les textes, le lien et l’image. L’ordre dans le fichier est l’ordre d’affichage. Le panneau de texte alterne automatiquement entre la gauche et la droite.
+
+## Couleurs et polices
+
+Les variables sont regroupées en tête de `style.css`, dans `:root`.
+
+## Mise en ligne (GitHub Pages)
+
+1. Créer un dépôt public nommé `noah-sorli.github.io` (nom du compte GitHub suivi de `.github.io`).
+2. Y déposer `index.html`, `style.css` et le dossier `img`.
+3. Dans Settings > Pages, choisir la branche `main` et le dossier `/ (root)`.
+
+Le site est alors disponible à l’adresse `https://noah-sorli.github.io`.

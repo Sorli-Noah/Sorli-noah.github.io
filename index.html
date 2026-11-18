@@ -1,172 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Noah, portfolio</title>
-  <meta name="description" content="Portfolio de Noah, élève ingénieur à l’ENSEEIHT en mécanique des fluides et énergétique, opérateur image et son.">
-  <meta name="color-scheme" content="light dark">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noah Sorli – Technicien audiovisuel, Toulouse</title>
+<meta name="description" content="Portfolio de Noah Sorli : cadrage, lumière, régie et post-production. Étudiant ingénieur à l’ENSEEIHT, Toulouse.">
+<meta name="theme-color" content="#0B4F5C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="top wrap">
-  <a class="brand" href="#">Noah</a>
+<header class="site-header">
+  <a class="brand" href="#top">Noah Sorli</a>
   <nav aria-label="Navigation principale">
+    <a href="#a-propos">À propos</a>
     <a href="#projets">Projets</a>
-    <a href="#competences">Compétences</a>
-    <a href="#parcours">Parcours</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<main>
-  <section class="hero wrap">
-    <div class="intro">
-      <h1>Élève ingénieur en mécanique des fluides, opérateur image et son.</h1>
-      <p>Première année à l’ENSEEIHT, à Toulouse, en mécanique des fluides, énergétique et transferts. En parallèle, je filme, je monte et je gère la régie d’événements pour TVn7, l’association audiovisuelle de l’école.</p>
-      <p class="actions">
-        <a href="#projets">Voir les projets</a>
-        <a href="#contact">Me contacter</a>
-      </p>
-    </div>
-    <figure>
-      <svg class="profile" viewBox="0 0 340 220" role="img" aria-labelledby="profile-title">
-        <title id="profile-title">Profil de vitesse dans une couche limite</title>
-        <defs>
-          <marker id="head" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
-            <path d="M0 0 8 4 0 8z" fill="currentColor"/>
-          </marker>
-        </defs>
-        <g class="arrows">
-          <line x1="0" y1="170" x2="92" y2="170"/>
-          <line x1="0" y1="140" x2="167" y2="140"/>
-          <line x1="0" y1="110" x2="225" y2="110"/>
-          <line x1="0" y1="80" x2="267" y2="80"/>
-          <line x1="0" y1="50" x2="292" y2="50"/>
-          <line x1="0" y1="20" x2="300" y2="20"/>
-        </g>
-        <path class="curve" d="M0 200Q300 110 300 20"/>
-        <line class="wall" x1="0" y1="200" x2="340" y2="200"/>
-      </svg>
-      <figcaption>Profil de vitesse dans une couche limite, au-dessus d’une paroi.</figcaption>
-    </figure>
+<main id="top">
+
+  <section class="hero">
+    <h1>Noah Sorli</h1>
+    <p class="hero-lead">Cadrage, lumière, régie et post-production. Étudiant ingénieur à l’ENSEEIHT, je tourne et je monte avec TVn7, l’association audiovisuelle de l’école.</p>
+    <p class="hero-dispo">Basé à Toulouse, disponible de mi-juillet à fin août 2026.</p>
+    <a class="hero-link" href="#projets">Voir les projets</a>
   </section>
 
-  <section class="block wrap" id="projets">
+  <section id="a-propos" class="about">
+    <h2>À propos</h2>
+    <div class="about-grid">
+      <div class="prose">
+        <p>Passionné d’image depuis cinq ans, je suis en première année à l’ENSEEIHT (filière MFEE) et trésorier de TVn7. À l’association, j’ai tenu tous les postes : cadrage, réalisation, régie image, son, montage, étalonnage et VFX. J’y fais des JT tournés et montés dans la journée, des captations d’événements, des clips et des courts métrages.</p>
+        <p>Mon côté ingénieur se voit sur le plateau : préparation méthodique, matériel maîtrisé, sauvegarde des médias propre. Je cherche un emploi étudiant d’un à deux mois dans une société de production audiovisuelle.</p>
+      </div>
+      <dl class="gear">
+        <dt>Caméras</dt><dd>Sony FX3, FX6, Z200, Blackmagic Pocket 6K (bases)</dd>
+        <dt>Stabilisation</dt><dd>DJI RS 2, RS 4 Pro, grue</dd>
+        <dt>Lumière</dt><dd>Aputure C120d, HR672, Godox LDX100R</dd>
+        <dt>Son</dt><dd>MixPre-3/6, Rode NTG2 et NTG3, AT897</dd>
+        <dt>Transmission HF</dt><dd>DJI Transmission SDR, Teradek Spark 4K</dd>
+        <dt>Post-production</dt><dd>Premiere Pro, bases en DaVinci Resolve, After Effects et VFX</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projets" class="projects">
     <h2>Projets</h2>
-    <div class="content">
-      <div class="group">
-        <h3>Audiovisuel</h3>
-        <ul class="work">
-          <li>
-            <h4>La Dernière Lettre</h4>
-            <p>Court métrage. Prix du Jury et Prix du Son.</p>
-          </li>
-          <li>
-            <h4>Supernova</h4>
-            <p>Clip musical.</p>
-          </li>
-          <li>
-            <h4>InterAgros</h4>
-            <p>Captation de la compétition sportive à Rennes pour TVn7.</p>
-          </li>
-          <li>
-            <h4>Just Dance</h4>
-            <p>Recréation en effets visuels.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="group">
-        <h3>Ingénierie</h3>
-        <ul class="work">
-          <li>
-            <h4>Advection-diffusion par volumes finis</h4>
-            <p>Simulation en Fortran 90, post-traitement avec Python et ParaView, rapport en LaTeX. Projet en binôme.</p>
-          </li>
-          <li>
-            <h4>Réseau de neurones from scratch</h4>
-            <p>Implémentation en NumPy pour le cours d’optimisation.</p>
-          </li>
-          <li>
-            <h4>Couche limite sur plaque plane</h4>
-            <p>Mesures au fil chaud, profils laminaire et turbulent, simulation sous Fluent et ICEM CFD.</p>
-          </li>
-        </ul>
-      </div>
+    <p class="projects-note">Chaque projet ouvre la vidéo.</p>
+
+    <div class="project-list">
+
+      <article class="project">
+        <a href="https://youtu.be/LIEN_LA_DERNIERE_LETTRE" target="_blank" rel="noopener" style="--img: url('img/derniere-lettre.jpg')">
+          <div class="panel">
+            <h3>La Dernière Lettre</h3>
+            <p class="meta">Court métrage, octobre 2025</p>
+            <p class="role">Réalisateur et chef technique</p>
+            <p class="award">Prix du Jury et Prix du Son au CDN, festival interne de l’ENSEEIHT</p>
+            <p class="desc">J’ai participé à l’écriture du scénario, réalisé le storyboard et préparé le tournage, puis assuré le cadrage, la lumière et la prise de son. J’ai ensuite fait le montage et géré la post-production, en coordonnant l’équipe technique et artistique.</p>
+            <span class="cta">Voir le film</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="project">
+        <a href="https://youtu.be/LIEN_SUPERNOVA" target="_blank" rel="noopener" style="--img: url('img/supernova.jpg')">
+          <div class="panel">
+            <h3>Supernova</h3>
+            <p class="meta">Clip musical, février–mars 2026</p>
+            <p class="role">Co-réalisateur, cadreur et technicien</p>
+            <p class="desc">J’ai co-réalisé le clip et cadré une partie des plans, notamment en caméra A (Sony FX3). J’ai préparé la caméra, les optiques et la lumière, puis participé au montage et à l’étalonnage, et réalisé certains VFX.</p>
+            <span class="cta">Voir le clip</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="project">
+        <a href="https://youtu.be/LIEN_JUST_DANCE" target="_blank" rel="noopener" style="--img: url('img/just-dance.jpg')">
+          <div class="panel">
+            <h3>Recréation IRL de Just Dance</h3>
+            <p class="meta">Vidéo VFX, février 2025</p>
+            <p class="role">Réalisateur, VFX et montage</p>
+            <p class="desc">Dans cette vidéo, j’ai recréé en prise de vue réelle l’interface du jeu Just Dance. J’ai dirigé le tournage et coordonné le groupe, puis réalisé les VFX, le compositing et le montage final.</p>
+            <span class="cta">Voir la vidéo</span>
+          </div>
+        </a>
+      </article>
+
     </div>
   </section>
 
-  <section class="block wrap" id="competences">
-    <h2>Compétences</h2>
-    <div class="content skills">
-      <div>
-        <h3>Image et son</h3>
-        <ul>
-          <li>Caméra, lumière, prise de son</li>
-          <li>Régie live : ATEM, OBS, console X32</li>
-          <li>Montage et étalonnage : DaVinci Resolve</li>
-          <li>Motion design : After Effects, Illustrator</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Calcul scientifique</h3>
-        <ul>
-          <li>Fortran 90</li>
-          <li>Python : NumPy, pandas, matplotlib</li>
-          <li>ParaView</li>
-          <li>Fluent et ICEM CFD</li>
-          <li>LaTeX</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Langues</h3>
-        <ul>
-          <li>Français, langue maternelle</li>
-          <li>Anglais, C1/C2</li>
-          <li>Espagnol, B1/B2</li>
-          <li>Russe, en cours</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="block wrap" id="parcours">
-    <h2>Parcours</h2>
-    <dl class="content roles">
-      <div>
-        <dt>ENSEEIHT, Toulouse INP</dt>
-        <dd>Cycle ingénieur, filière MFEE. Spécialisation Énergie prévue en deuxième année.</dd>
-      </div>
-      <div>
-        <dt>TVn7</dt>
-        <dd>Trésorier. Caméra, lumière, son, montage et production.</dd>
-      </div>
-      <div>
-        <dt>AE INP</dt>
-        <dd>Trésorier.</dd>
-      </div>
-      <div>
-        <dt>BDE et clubs</dt>
-        <dd>Membre de plusieurs bureaux.</dd>
-      </div>
-    </dl>
-  </section>
-
-  <section class="block wrap" id="contact">
+  <section id="contact" class="contact">
     <h2>Contact</h2>
-    <div class="content">
-      <p>Pour un projet, un tournage ou une opportunité.</p>
-      <p><a class="mail" href="mailto:contact@exemple.fr">contact@exemple.fr</a></p>
-      <p><a href="https://www.linkedin.com/in/identifiant/">LinkedIn</a></p>
-    </div>
+    <p>Un à deux mois, de mi-juillet à fin août 2026, à Toulouse. Véhiculé.</p>
+    <p class="contact-links">
+      <a href="mailto:noah.sorli@orange.fr">noah.sorli@orange.fr</a>
+      <a href="tel:+33652321309">06 52 32 13 09</a>
+    </p>
   </section>
+
 </main>
 
-<footer class="foot wrap">© 2026 Noah</footer>
+<footer>© 2026 Noah Sorli</footer>
 
 </body>
 </html>
